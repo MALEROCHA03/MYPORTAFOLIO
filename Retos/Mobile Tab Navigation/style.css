@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://th.bing.com/th/id/R.fe3d0bab2c5caf6b57dda70762df25a2?rik=8OCcIyw3J6v0Gg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fDisney-Wallpaper-Tumblr.jpg&ehk=jPy17WoV3kqa2EclVkHiYPA%2bz9198d8gR556J9KfCJU%3d&risl=&pid=ImgRaw&r=0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Alfa Slab One", cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.phone {
+	border-radius: 15px;
+	border: 5px solid rgb(0, 0, 0);
+	overflow: hidden;
+	position: relative;
+	height: 600px;
+	width: 340px;
+}
+
+.phone .content {
+	opacity: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: calc(100% - 60px);
+	width: 100%;
+	transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+	opacity: 1;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-top: -5px;
+	width: 100%;
+}
+
+nav ul {
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 60px;
+}
+
+nav ul li {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	flex: 1;
+	padding: 10px;
+	text-align: center;
+}
+
+nav ul li:hover, nav ul li.active {
+	color: #9dcbff;
+}
+
+nav ul li p {
+	font-size: 12px;
+	margin: 2px 0;
+}
+
+
+	.floating-text {
+        background-color: #8c9ecf;
+        border-radius: 10px 10px 0 0;
+        color: rgb(0, 0, 0);
+        font-family: "Alfa Slab One", cursive;
+        padding: 12px 20px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 998;
+        
+    }
+
+
+
+.floating-text a {
+	color:  rgb(2, 2, 2);;
+	text-decoration: none;
+}
+
+
+	

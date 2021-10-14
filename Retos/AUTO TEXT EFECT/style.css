@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body { 
+	font-family: oblique bold 120% cursive;
+	background: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	text-align: center;
+	font-size: x-large;
+}
+
+
+.floating-text {
+	background-color: #f4bafb;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: "Alfa Slab One", cursive;
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color:  rgb(8, 8, 8);;
+	text-decoration: none;
+}
+.LOVE{
+	color: rgb(238, 169, 232);
+	font-family: "Alfa Slab One", cursive;
+
+}
+.maria{
+	color: rgb(202, 122, 233);
+	font-family: "Alfa Slab One", cursive;
+}
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
